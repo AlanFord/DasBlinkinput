@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LP2980
+D TI 50mA Regulator 
+K REGUL POWER  SOT-23-5
+F regulator/LP2985.pdf
+$ENDCMP
+#
+$CMP MCP6404
+D Quad Op amp.
+K AmpliOp
+F op_amps/lm324.pdf
+$ENDCMP
+#
+$CMP VBPW34SR
+D Diode
+$ENDCMP
+#
+#End Doc Library

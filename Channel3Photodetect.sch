@@ -1,0 +1,204 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DasBlinkinput
+LIBS:DasBlinkinput-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C_Small C401
+U 1 1 5822946B
+P 5540 1890
+F 0 "C401" V 5660 1850 50  0000 L CNN
+F 1 "2.2p" V 5430 1760 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5540 1890 50  0001 C CNN
+F 3 "" H 5540 1890 50  0000 C CNN
+	1    5540 1890
+	0    1    1    0   
+$EndComp
+$Comp
+L MCP6404 U201
+U 3 1 58229472
+P 5430 2940
+F 0 "U201" H 5480 3140 50  0000 C CNN
+F 1 "MCP6404" H 5580 2740 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 5380 3040 50  0001 C CNN
+F 3 "" H 5480 3140 50  0000 C CNN
+	3    5430 2940
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5130 1890 5130 2840
+Wire Wire Line
+	5440 1890 5130 1890
+Wire Wire Line
+	5940 1890 5940 3240
+Wire Wire Line
+	5730 2940 6490 2940
+Wire Wire Line
+	5640 1890 5940 1890
+$Comp
+L GND #PWR015
+U 1 1 58229483
+P 5130 3340
+F 0 "#PWR015" H 5130 3090 50  0001 C CNN
+F 1 "GND" H 5130 3190 50  0000 C CNN
+F 2 "" H 5130 3340 50  0000 C CNN
+F 3 "" H 5130 3340 50  0000 C CNN
+	1    5130 3340
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5130 3040 5130 3340
+$Comp
+L R_Small R403
+U 1 1 5822948B
+P 5940 3340
+F 0 "R403" V 6020 3300 50  0000 L CNN
+F 1 "10K" V 5870 3220 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5940 3340 50  0001 C CNN
+F 3 "" H 5940 3340 50  0000 C CNN
+F 4 "Value" H 5940 3340 60  0001 C CNN "Fieldname"
+	1    5940 3340
+	-1   0    0    1   
+$EndComp
+Connection ~ 5940 2940
+$Comp
+L GND #PWR016
+U 1 1 58229493
+P 5940 3540
+F 0 "#PWR016" H 5940 3290 50  0001 C CNN
+F 1 "GND" H 5940 3390 50  0000 C CNN
+F 2 "" H 5940 3540 50  0000 C CNN
+F 3 "" H 5940 3540 50  0000 C CNN
+	1    5940 3540
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5940 3440 5940 3540
+$Comp
+L VBPW34SR PD401
+U 1 1 582294CC
+P 4520 3050
+F 0 "PD401" H 4440 3130 50  0000 L CNN
+F 1 "VBPW34S" H 4370 2970 50  0000 L CNN
+F 2 "DasBlinkinput:VBPW34S" V 4520 3050 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/81128/vbpw34s.pdf" V 4520 3050 50  0001 C CNN
+F 4 "Value" H 4520 3050 60  0001 C CNN "Fieldname"
+	1    4520 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4520 2950 4520 2840
+Wire Wire Line
+	4520 2840 5130 2840
+$Comp
+L GND #PWR017
+U 1 1 582294D5
+P 4570 3300
+F 0 "#PWR017" H 4570 3050 50  0001 C CNN
+F 1 "GND" H 4570 3150 50  0000 C CNN
+F 2 "" H 4570 3300 50  0000 C CNN
+F 3 "" H 4570 3300 50  0000 C CNN
+	1    4570 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4520 3150 4520 3300
+Wire Wire Line
+	4520 3300 4570 3300
+$Comp
+L LM339 U202
+U 3 1 5822949A
+P 6790 3040
+F 0 "U202" H 6840 3240 50  0000 C CNN
+F 1 "LM339" H 6890 2840 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 6740 3140 50  0001 C CNN
+F 3 "" H 6840 3240 50  0000 C CNN
+	3    6790 3040
+	1    0    0    -1  
+$EndComp
+Text HLabel 6430 3810 0    60   Input ~ 0
+REF_V
+Wire Wire Line
+	6480 3810 6480 3140
+Wire Wire Line
+	6430 3810 6480 3810
+Wire Wire Line
+	6480 3140 6490 3140
+Text HLabel 7400 3040 2    60   Input ~ 0
+PD3
+Wire Wire Line
+	7090 3040 7400 3040
+$Comp
+L R_Small R401
+U 1 1 5823C8F8
+P 5310 2380
+F 0 "R401" V 5390 2340 50  0000 L CNN
+F 1 "22M" V 5240 2260 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5310 2380 50  0001 C CNN
+F 3 "" H 5310 2380 50  0000 C CNN
+F 4 "RMCF0805FT22M0" H 5310 2380 60  0001 C CNN "MPN"
+	1    5310 2380
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R402
+U 1 1 5823C900
+P 5640 2380
+F 0 "R402" V 5720 2340 50  0000 L CNN
+F 1 "22M" V 5570 2260 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5640 2380 50  0001 C CNN
+F 3 "" H 5640 2380 50  0000 C CNN
+F 4 "RMCF0805FT22M0" H 5640 2380 60  0001 C CNN "MPN"
+	1    5640 2380
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5740 2380 5940 2380
+Wire Wire Line
+	5540 2380 5410 2380
+Wire Wire Line
+	5210 2380 5130 2380
+Connection ~ 5940 2380
+Connection ~ 5130 2380
+$EndSCHEMATC
