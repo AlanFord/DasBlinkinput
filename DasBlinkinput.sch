@@ -185,53 +185,41 @@ F 3 "" H 970 2880 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R103
+L R_Small R102
 U 1 1 582376EF
-P 4770 4450
-F 0 "R103" V 4850 4410 50  0000 L CNN
-F 1 "10K" V 4700 4330 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 4770 4450 50  0001 C CNN
-F 3 "" H 4770 4450 50  0000 C CNN
-F 4 "Value" H 4770 4450 60  0001 C CNN "Fieldname"
-	1    4770 4450
+P 4620 4450
+F 0 "R102" V 4700 4410 50  0000 L CNN
+F 1 "5K" V 4550 4330 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 4620 4450 50  0001 C CNN
+F 3 "" H 4620 4450 50  0000 C CNN
+F 4 "Value" H 4620 4450 60  0001 C CNN "Fieldname"
+	1    4620 4450
 	-1   0    0    1   
 $EndComp
-Text GLabel 4770 4240 1    60   Input ~ 0
+Text GLabel 4620 4240 1    60   Input ~ 0
 +3V
 $Comp
 L POT RV101
 U 1 1 582376F8
 P 4620 4780
 F 0 "RV101" H 4620 4700 50  0000 C CNN
-F 1 "POT" H 4620 4780 50  0000 C CNN
+F 1 "10K" H 4620 4780 50  0000 C CNN
 F 2 "DasBlinkinput:P090L-02F25BR10K" H 4620 4780 50  0001 C CNN
 F 3 "" H 4620 4780 50  0000 C CNN
+F 4 "Value" H 4620 4780 60  0001 C CNN "Fieldname"
 	1    4620 4780
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L GND #PWR03
 U 1 1 582376FF
-P 4620 5320
-F 0 "#PWR03" H 4620 5070 50  0001 C CNN
-F 1 "GND" H 4620 5170 50  0000 C CNN
-F 2 "" H 4620 5320 50  0000 C CNN
-F 3 "" H 4620 5320 50  0000 C CNN
-	1    4620 5320
+P 4620 5030
+F 0 "#PWR03" H 4620 4780 50  0001 C CNN
+F 1 "GND" H 4620 4880 50  0000 C CNN
+F 2 "" H 4620 5030 50  0000 C CNN
+F 3 "" H 4620 5030 50  0000 C CNN
+	1    4620 5030
 	1    0    0    -1  
-$EndComp
-NoConn ~ 4620 4630
-$Comp
-L R_Small R102
-U 1 1 58237709
-P 4620 5120
-F 0 "R102" V 4700 5080 50  0000 L CNN
-F 1 "10K" V 4550 5000 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 4620 5120 50  0001 C CNN
-F 3 "" H 4620 5120 50  0000 C CNN
-F 4 "Value" H 4620 5120 60  0001 C CNN "Fieldname"
-	1    4620 5120
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2350 3720 2350 3440
@@ -271,14 +259,6 @@ Wire Wire Line
 	960  2630 970  2630
 Wire Wire Line
 	970  2630 970  2880
-Wire Wire Line
-	4770 4240 4770 4350
-Wire Wire Line
-	4770 4550 4770 4780
-Wire Wire Line
-	4620 4930 4620 5020
-Wire Wire Line
-	4620 5220 4620 5320
 Wire Wire Line
 	5830 1340 6460 1340
 Wire Wire Line
@@ -339,13 +319,18 @@ Wire Wire Line
 	2070 3870 2070 3720
 Connection ~ 2070 3720
 Text Notes 1050 1080 0    60   ~ 0
-Note 1:  Check the sense resistors\nNote 2:  Spec the tantalum cap\nNote 3:  Size the pot\nNote 4:  Check diode current and resistor sizing
+Note 1:  Sense resistors sized for 2V @ 1uA\nNote 2:  Minimum ESR required for C102\nNote 3:  Input voltage is +5V\nNote 4:  Reference voltage varies from 0V to +2V
 Wire Wire Line
 	5830 1340 5830 5360
 Connection ~ 5830 2730
 Connection ~ 5830 4040
 Wire Wire Line
-	4620 4970 5830 4970
-Connection ~ 5830 4970
-Connection ~ 4620 4970
+	4620 4930 4620 5030
+Wire Wire Line
+	4620 4550 4620 4630
+Wire Wire Line
+	4620 4240 4620 4350
+Wire Wire Line
+	4770 4780 5830 4780
+Connection ~ 5830 4780
 $EndSCHEMATC
