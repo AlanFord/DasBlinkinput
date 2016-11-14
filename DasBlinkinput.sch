@@ -103,13 +103,13 @@ $EndComp
 $Comp
 L R_Small R101
 U 1 1 582369B4
-P 1430 3220
-F 0 "R101" H 1460 3240 50  0000 L CNN
-F 1 "0R" H 1460 3180 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 1430 3220 50  0001 C CNN
-F 3 "" H 1430 3220 50  0000 C CNN
-F 4 "Value" H 1430 3220 60  0001 C CNN "Fieldname"
-	1    1430 3220
+P 1470 3220
+F 0 "R101" H 1500 3240 50  0000 L CNN
+F 1 "0R" H 1500 3180 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 1470 3220 50  0001 C CNN
+F 3 "" H 1470 3220 50  0000 C CNN
+F 4 "Value" H 1470 3220 60  0001 C CNN "Fieldname"
+	1    1470 3220
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -184,18 +184,6 @@ F 3 "" H 970 2880 50  0000 C CNN
 	1    970  2880
 	1    0    0    -1  
 $EndComp
-$Comp
-L R_Small R102
-U 1 1 582376EF
-P 4620 4450
-F 0 "R102" V 4700 4410 50  0000 L CNN
-F 1 "5K" V 4550 4330 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 4620 4450 50  0001 C CNN
-F 3 "" H 4620 4450 50  0000 C CNN
-F 4 "Value" H 4620 4450 60  0001 C CNN "Fieldname"
-	1    4620 4450
-	-1   0    0    1   
-$EndComp
 Text GLabel 4620 4240 1    60   Input ~ 0
 +3V
 $Comp
@@ -228,14 +216,11 @@ Wire Wire Line
 Wire Wire Line
 	1190 3720 1190 2930
 Wire Wire Line
-	1430 3320 1430 3720
-Connection ~ 1430 3720
+	1470 3120 1470 2640
 Wire Wire Line
-	1430 3120 1430 2640
+	1470 2640 1550 2640
 Wire Wire Line
-	1430 2640 1550 2640
-Wire Wire Line
-	1550 2440 1190 2440
+	1190 2440 1550 2440
 Wire Wire Line
 	1190 2440 1190 2730
 Wire Wire Line
@@ -319,7 +304,7 @@ Wire Wire Line
 	2070 3870 2070 3720
 Connection ~ 2070 3720
 Text Notes 1050 1080 0    60   ~ 0
-Note 1:  Sense resistors sized for 2V @ 1uA\nNote 2:  Minimum ESR required for C102\nNote 3:  Input voltage is +5V\nNote 4:  Reference voltage varies from 0V to +2V
+Note 1:  Sense resistors sized for 2V @ 1uA\nNote 2:  Minimum ESR required for C102\nNote 3:  Input voltage is +5V\nNote 4:  Reference voltage varies from 0V to +3V
 Wire Wire Line
 	5830 1340 5830 5360
 Connection ~ 5830 2730
@@ -327,10 +312,13 @@ Connection ~ 5830 4040
 Wire Wire Line
 	4620 4930 4620 5030
 Wire Wire Line
-	4620 4550 4620 4630
-Wire Wire Line
-	4620 4240 4620 4350
-Wire Wire Line
 	4770 4780 5830 4780
 Connection ~ 5830 4780
+Wire Wire Line
+	4620 4240 4620 4630
+Wire Wire Line
+	1400 3320 1470 3320
+Wire Wire Line
+	1400 3320 1400 2440
+Connection ~ 1400 2440
 $EndSCHEMATC

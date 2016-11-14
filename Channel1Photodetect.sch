@@ -52,7 +52,7 @@ F 0 "R201" V 5360 2440 50  0000 L CNN
 F 1 "2M" V 5210 2360 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 5280 2480 50  0001 C CNN
 F 3 "" H 5280 2480 50  0000 C CNN
-F 4 "Value" H 5280 2480 60  0001 C CNN "Fieldname"
+F 4 "RC0805FR-072ML" H 5280 2480 60  0001 C CNN "MPN"
 	1    5280 2480
 	0    1    1    0   
 $EndComp
@@ -137,7 +137,9 @@ P 6520 3140
 F 0 "U202" H 6570 3340 50  0000 C CNN
 F 1 "LM339" H 6620 2940 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 6470 3240 50  0001 C CNN
-F 3 "" H 6570 3340 50  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm139a.pdf" H 6570 3340 50  0001 C CNN
+F 4 "Value" H 6520 3140 60  0001 C CNN "Fieldname"
+F 5 "LM339DE4" H 6520 3140 60  0001 C CNN "MPN"
 	1    6520 3140
 	1    0    0    -1  
 $EndComp
@@ -280,4 +282,23 @@ Wire Wire Line
 Wire Wire Line
 	5180 2480 4860 2480
 Connection ~ 4860 2480
+$Comp
+L R_Small R203
+U 1 1 5824D012
+P 6990 2890
+F 0 "R203" V 7070 2850 50  0000 L CNN
+F 1 "10K" V 6920 2770 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6990 2890 50  0001 C CNN
+F 3 "" H 6990 2890 50  0000 C CNN
+F 4 "RC0805FR-072ML" H 6990 2890 60  0001 C CNN "MPN"
+	1    6990 2890
+	-1   0    0    1   
+$EndComp
+Text GLabel 6990 2640 1    60   Input ~ 0
++3V
+Wire Wire Line
+	6990 2640 6990 2790
+Wire Wire Line
+	6990 2990 6990 3140
+Connection ~ 6990 3140
 $EndSCHEMATC
