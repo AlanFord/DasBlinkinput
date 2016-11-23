@@ -192,9 +192,10 @@ U 1 1 582376F8
 P 4620 4780
 F 0 "RV101" H 4620 4700 50  0000 C CNN
 F 1 "10K" H 4620 4780 50  0000 C CNN
-F 2 "DasBlinkinput:P090L-02F25BR10K" H 4620 4780 50  0001 C CNN
-F 3 "" H 4620 4780 50  0000 C CNN
-F 4 "Value" H 4620 4780 60  0001 C CNN "Fieldname"
+F 2 "DasBlinkinput:EVM-3YSX50B14" H 4620 4780 50  0001 C CNN
+F 3 "http://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Resistors%20Thermistors%20PDFs/EVM-3Y_S_R_Rev2010.pdf" H 4620 4780 50  0001 C CNN
+F 4 "EVM-3YSX50B14" H 4620 4780 60  0001 C CNN "MPN"
+F 5 "Value" H 4620 4780 60  0001 C CNN "Fieldname"
 	1    4620 4780
 	0    1    -1   0   
 $EndComp

@@ -70,7 +70,7 @@ F 4 "Value" H 5270 1990 60  0001 C CNN "Fieldname"
 $EndComp
 $Comp
 L MCP6404 U201
-U 1 1 58228B8A
+U 4 1 58228B8A
 P 5160 3040
 F 0 "U201" H 5210 3240 50  0000 C CNN
 F 1 "MCP6404" H 5310 2840 50  0000 C CNN
@@ -78,7 +78,7 @@ F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 5110 3140 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22229D.pdf" H 5210 3240 50  0001 C CNN
 F 4 "MCP6404-E/SL" H 5160 3040 60  0001 C CNN "MPN"
 F 5 "Value" H 5160 3040 60  0001 C CNN "Fieldname"
-	1    5160 3040
+	4    5160 3040
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
