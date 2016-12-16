@@ -182,4 +182,18 @@ Wire Wire Line
 	5820 2600 5820 3650
 Connection ~ 5820 3650
 Connection ~ 5820 3080
+$Comp
+L CONN_01X01 P501
+U 1 1 585447CD
+P 6060 3940
+F 0 "P501" H 6000 4040 50  0000 C CNN
+F 1 "CONN_01X01" V 6160 3940 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 6060 3940 50  0001 C CNN
+F 3 "" H 6060 3940 50  0000 C CNN
+	1    6060 3940
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6060 3740 6060 3650
+Connection ~ 6060 3650
 $EndSCHEMATC

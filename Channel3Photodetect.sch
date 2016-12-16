@@ -66,14 +66,6 @@ F 3 "" H 5480 3140 50  0000 C CNN
 	3    5430 2940
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5130 1890 5130 2840
-Wire Wire Line
-	5440 1890 5130 1890
-Wire Wire Line
-	5730 2940 6490 2940
-Wire Wire Line
-	5640 1890 5940 1890
 $Comp
 L GND #PWR013
 U 1 1 58229483
@@ -85,8 +77,6 @@ F 3 "" H 5130 3340 50  0000 C CNN
 	1    5130 3340
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5130 3040 5130 3340
 $Comp
 L VBPW34SR PD401
 U 1 1 582294CC
@@ -100,10 +90,6 @@ F 5 "VBPW34S" H 4520 3050 60  0001 C CNN "AltPart"
 	1    4520 3050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4520 2950 4520 2840
-Wire Wire Line
-	4520 2840 5130 2840
 $Comp
 L GND #PWR014
 U 1 1 582294D5
@@ -115,10 +101,6 @@ F 3 "" H 4570 3300 50  0000 C CNN
 	1    4570 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4520 3150 4520 3300
-Wire Wire Line
-	4520 3300 4570 3300
 $Comp
 L LM339 U202
 U 3 1 5822949A
@@ -133,16 +115,8 @@ F 4 "LM339DE4" H 6790 3040 60  0001 C CNN "MPN"
 $EndComp
 Text HLabel 6430 3810 0    60   Input ~ 0
 REF_V
-Wire Wire Line
-	6480 3810 6480 3140
-Wire Wire Line
-	6430 3810 6480 3810
-Wire Wire Line
-	6480 3140 6490 3140
 Text HLabel 7400 3040 2    60   Input ~ 0
 PD3
-Wire Wire Line
-	7090 3040 7400 3040
 $Comp
 L R_Small R401
 U 1 1 5823C8F8
@@ -156,11 +130,6 @@ F 5 "   " H 5550 2380 60  0001 C CNN "MPN"
 	1    5550 2380
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5940 2380 5650 2380
-Wire Wire Line
-	5450 2380 5130 2380
-Connection ~ 5130 2380
 $Comp
 L R_Small R402
 U 1 1 5824D4E1
@@ -175,6 +144,48 @@ F 4 "Value" H 7280 2790 60  0001 C CNN "Fieldname"
 $EndComp
 Text GLabel 7280 2540 1    60   Input ~ 0
 +3V
+$Comp
+L CONN_01X01 P401
+U 1 1 585446A7
+P 6150 3230
+F 0 "P401" H 6110 3330 50  0000 C CNN
+F 1 "CONN_01X01" V 6250 3230 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 6150 3230 50  0001 C CNN
+F 3 "" H 6150 3230 50  0000 C CNN
+	1    6150 3230
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5130 1890 5130 2840
+Wire Wire Line
+	5440 1890 5130 1890
+Wire Wire Line
+	5730 2940 6490 2940
+Wire Wire Line
+	5640 1890 5940 1890
+Wire Wire Line
+	5130 3040 5130 3340
+Wire Wire Line
+	4520 2950 4520 2840
+Wire Wire Line
+	4520 2840 5130 2840
+Wire Wire Line
+	4520 3150 4520 3300
+Wire Wire Line
+	4520 3300 4570 3300
+Wire Wire Line
+	6480 3810 6480 3140
+Wire Wire Line
+	6430 3810 6480 3810
+Wire Wire Line
+	6480 3140 6490 3140
+Wire Wire Line
+	7090 3040 7400 3040
+Wire Wire Line
+	5940 2380 5650 2380
+Wire Wire Line
+	5450 2380 5130 2380
+Connection ~ 5130 2380
 Wire Wire Line
 	7280 2540 7280 2690
 Wire Wire Line
@@ -184,4 +195,7 @@ Wire Wire Line
 	5940 1890 5940 2940
 Connection ~ 5940 2940
 Connection ~ 5940 2380
+Wire Wire Line
+	6150 3030 6150 2940
+Connection ~ 6150 2940
 $EndSCHEMATC

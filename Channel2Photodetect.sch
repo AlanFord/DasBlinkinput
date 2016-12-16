@@ -183,4 +183,18 @@ Connection ~ 5610 3150
 Wire Wire Line
 	5080 2620 5610 2620
 Connection ~ 5610 2620
+$Comp
+L CONN_01X01 P301
+U 1 1 585445D1
+P 5830 3450
+F 0 "P301" H 5780 3550 50  0000 C CNN
+F 1 "CONN_01X01" V 5930 3450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 5830 3450 50  0001 C CNN
+F 3 "" H 5830 3450 50  0000 C CNN
+	1    5830 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5830 3250 5830 3150
+Connection ~ 5830 3150
 $EndSCHEMATC
