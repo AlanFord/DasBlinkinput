@@ -233,7 +233,7 @@ F 3 "" H 9170 2190 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 1050 1080 0    60   ~ 0
-Note 1:  Sense resistors sized for 2V @ 1uA\nNote 2:  Minimum ESR required for C102\nNote 3:  Input voltage is +5V\nNote 4:  Reference voltage varies from 0V to +3V
+Note 1:  Sense resistors sized for 2V @ 2uA\nNote 2:  Minimum ESR required for C102\nNote 3:  Input voltage is +5V\nNote 4:  Reference voltage varies from 0V to +3V
 $Comp
 L CONN_01X01 P104
 U 1 1 58378D35
