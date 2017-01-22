@@ -124,20 +124,6 @@ F 4 "Value" H 1190 3420 60  0001 C CNN "Fieldname"
 	1    1190 3420
 	1    0    0    -1  
 $EndComp
-$Comp
-L C_Small C102
-U 1 1 58236A51
-P 3350 2800
-F 0 "C102" H 3360 2870 50  0000 L CNN
-F 1 "2.2u" H 3360 2720 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3350 2800 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/40002/293d.pdf" H 3350 2800 50  0001 C CNN
-F 4 "Value" H 3350 2800 60  0001 C CNN "Fieldname"
-F 5 "293D225X0010A2TE3" H 3350 2800 60  0001 C CNN "MPN"
-F 6 "min ESR required" H 3780 2610 60  0000 C CNN "Note"
-	1    3350 2800
-	1    0    0    -1  
-$EndComp
 Text GLabel 3470 2440 2    60   Input ~ 0
 +3V
 $Comp
@@ -259,12 +245,7 @@ Wire Wire Line
 	1190 2440 1190 3320
 Wire Wire Line
 	3150 2440 3470 2440
-Wire Wire Line
-	3350 2440 3350 2700
-Wire Wire Line
-	3350 3720 3350 2900
 Connection ~ 2350 3720
-Connection ~ 3350 2440
 Wire Wire Line
 	3240 2120 3240 2440
 Connection ~ 3240 2440
@@ -339,4 +320,27 @@ Wire Wire Line
 Connection ~ 5250 4780
 Wire Wire Line
 	8770 1600 9170 1600
+$Comp
+L CP C102
+U 1 1 588404ED
+P 3340 2850
+F 0 "C102" H 3365 2950 50  0000 L CNN
+F 1 "2.2u" H 3365 2750 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeA_EIA-3216_HandSoldering" H 3378 2700 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/40002/293d.pdf" H 3340 2850 50  0001 C CNN
+F 4 "Value" H 3340 2850 60  0001 C CNN "Fieldname"
+F 5 "293D225X0010A2TE3" H 3340 2850 60  0001 C CNN "MPN"
+F 6 "min ESR required" H 3830 2630 60  0000 C CNN "Note"
+	1    3340 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3340 2700 3340 2440
+Connection ~ 3340 2440
+Wire Wire Line
+	3350 3720 3350 3060
+Wire Wire Line
+	3350 3060 3340 3060
+Wire Wire Line
+	3340 3060 3340 3000
 $EndSCHEMATC
